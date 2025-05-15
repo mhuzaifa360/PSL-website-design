@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'font1';
+    src: url(./fonts/Nova_Square/NovaSquare-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: white;
+}
+body{
+
+}
+.title{
+    font-family: 'font1';
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 20px white;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(37, 36, 36, 0.6), rgba(37, 37, 37, 0.6)), url('./images/xbox-logo-green.jpg');
+    background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background: #c5c5c5; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-y{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.container-x{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.container-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/*? navbar section */
+.nav-section{
+    /* padding: 20px; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.nav-logo img{
+    width: 70px;
+}
+.links{
+    /* background: #f8c2c2; */
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    width: 100%;
+    /* background: #000; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+li{
+    list-style: none;
+}
+ul li a{
+    font-size: 27px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'font1';
+    font-weight: 600;
+    text-shadow: 1px 1px 20px white;
+}
+.home-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.home-section img{
+    width: 1200px;
+    height: 700px;
+}
+
+
+
+
+/*==================== ZigZag Border Animation ====================*/
+.zigzag__container {
+  --skin-color: #00ff00;
+  --dark-black-color: #292929;
+  --border-color: #928b8b;
+
+  /* position: relative; */
+  display: flex;
+  gap: 38px;
+}
+.zigzag__container:nth-child(2) {
+  /* transform: rotate(180deg); */
+  z-index: 1;
+}
+.zigzag__item {
+  display: block;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  /* transform: rotate(315deg); */
+}
+.zigzag__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--skin-color));
+  transform: translateX(-100%);
+  animation: animateBefore 2s linear infinite;
+  animation-delay: calc(1s * var(--i));
+}
+@keyframes animateBefore {
+  0% {
+    transform: translateX(-100%);
+  }
+  25%,
+  100% {
+    transform: translateX(100%);
+  }
+}
+.zigzag__item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--skin-color));
+  transform: translateY(-100%);
+  animation: animateAfter 2s linear infinite;
+  animation-delay: calc(1s * var(--i));
+}
+@keyframes animateAfter {
+  0%,
+  12.5% {
+    transform: translateY(-100%);
+  }
+  37.5%,
+  100% {
+    transform: translateY(100%);
+  }
+}
+/* .zigzag__item span {
+  position: absolute;
+  cursor: pointer;
+  inset: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-black-color);
+  outline: 1px solid var(--border-color);
+  transition: 0.1s linear;
+}
+.zigzag__container:nth-child(1) .zigzag__item span:hover {
+  outline-offset: -5px;
+}
+.zigzag__item span b {
+  font-weight: normal;
+  font-size: 2em;
+  transform: rotate(45deg);
+  color: var(--white-color);
+} */
+@media screen and (max-width: 600px) {
+  .zigzag__container {
+    gap: 19px;
+  }
+  .zigzag__item {
+    height: 50px;
+    width: 50px;
+  }
+  .zigzag__item span b {
+    font-size: 1em;
+  }
+}
+
+
+.teams-card{
+    border: 2px solid black;
+
+}
