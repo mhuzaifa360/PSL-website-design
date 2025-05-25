@@ -75,6 +75,7 @@ background-position: center;
     flex-direction: row;
     justify-content: space-evenly;
     position: fixed ;
+    top: 0px;
     background: linear-gradient(rgba(37, 36, 36, 0.6), rgba(37, 37, 37, 0.6)), url('./images/xbox-logo-green.jpg');
     background-attachment: fixed;
 background-size: cover;
@@ -108,6 +109,11 @@ ul li a{
     font-family: 'font1';
     font-weight: 600;
     text-shadow: 1px 1px 20px white;
+    color: var(--text-color);
+}
+ul li a:hover{
+    background: var(--text-color);
+    color:  black;
 }
 .squad-menu{
     /* display: none; */
@@ -178,4 +184,40 @@ ul li a{
 }
 .card-psl h2,p{
     font-family: 'font1';
+}
+
+.squad-slider{
+    background: #000;
+    width: 90%;
+    height: 470px;
+}
+.squad-nav{
+    height: 10%;
+    width: 100%;
+    background: #525252;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: sp;
+    align-items: center;
+}
+.squad-content{
+    width: 100%;
+    height: 90%;
+}
+.squad-card{
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.squad-card img{
+   width: 110px;
+}
+.squad-card h2{
+    font-size: 16px;
 }
