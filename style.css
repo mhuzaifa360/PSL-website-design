@@ -161,7 +161,7 @@ ul li a:hover{
     height: 650px;
 }
 
-
+/* ?  ------TEAM section */
 .card-section{
     display: flex;
     width: 100% ;
@@ -185,6 +185,8 @@ ul li a:hover{
     width: 180px;
 }
 
+
+/* ?-----PSL WINNERS SECTION */
 .psl-winners-section h1{
     margin-top: 50px;
 }
@@ -203,12 +205,21 @@ ul li a:hover{
     font-family: 'font1';
 }
 
-.squad-slider{
+
+.banner2{
+}
+.squad-section{
     /* background: #000; */
-    width: 90%;
-    height: 470px;
-    border-radius: 20px;
-    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.squad-content{
+    width: 80%;
+    height: auto;
+    background: #b0aeae;
 }
 .card-icon{
     display: flex;
@@ -216,46 +227,24 @@ ul li a:hover{
     align-items: center;
     width: 100%;
 }
-/* .squad-nav{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 10%;
-    width: 100%;
-    background: var(--primary-color);
-    position: relative;
-    top: 0px;
-    display: flex;
-    justify-content: sp;
-    align-items: center;
-} */
-.squad-content{
-    /* display: none; */
-    width: 100%;
-    height: auto;
-    background: var(--secondary-color);
-    border-radius: 20px;
-    /* background: #000; */
-    /* flex-wrap: wrap; */
-    
-}
 .squad-card{
-    width: 150px;
-    height: 150px;
-    /* background: rgba(255, 255, 255, 0.3); */
+    width: 200px;
+    height: 300px;
+    /* background: rgba(87, 85, 85, 0.3); */
     border-radius: 10px;
     background: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     margin: 20px;
     /* position: absolute; */
 }
 .squad-card img{
-    width: 130px;
+    width: 170px;
 }
 .squad-card h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     color: var(--primary-color);
 }
