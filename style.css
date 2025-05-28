@@ -85,6 +85,10 @@ background-position: center;
 .nav-logo img{
     width: 70px;
 }
+
+
+
+/* ?    dropdown start */
 .dropdown{
     
 }
@@ -206,7 +210,18 @@ ul li a:hover{
 }
 
 
+
+/* !   banner 2 */
 .banner2{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(37, 36, 36, 0.6), rgba(37, 37, 37, 0.6)), url('./images/xbox-logo-green.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.dropdown2 option{
+    background: var(--secondary-color);
 }
 .squad-section{
     /* background: #000; */
@@ -217,9 +232,10 @@ ul li a:hover{
     margin-top: 70px;
 }
 .squad-content{
+    background: transparent;
     width: 80%;
     height: auto;
-    background: #b0aeae;
+    /* background: #b0aeae; */
 }
 .card-icon{
     display: flex;
@@ -247,4 +263,74 @@ ul li a:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: var(--primary-color);
+}
+
+
+.psh{
+    border: 4px solid #fedc52;
+    outline: 5px solid white;
+}
+.psh:hover{
+    border: 4px solid #fedc52;
+    outline: 5px solid #fedc52;
+}
+.lhr{
+    border: 4px solid #fc6967;
+    outline: 5px solid white;
+}
+.lhr:hover{
+    border: 4px solid #fc6967;
+    outline: 4px solid #fc6967;
+}
+.isl{
+    border: 4px solid #f93029;
+    outline: 5px solid white;
+}
+.isl:hover{
+    border: 4px solid #f93029;
+    outline: 4px solid #f93029;
+}
+.mul{
+    border: 4px solid #1b6aaf;
+    outline: 5px solid white;
+}
+.mul:hover{
+    border: 4px solid #1b6aaf;
+    outline: 4px solid #1b6aaf;
+}
+.krch{
+    border: 4px solid #1c1e2e;
+    outline: 5px solid white;
+}
+.krch:hover{
+    border: 4px solid #1c1e2e;
+    outline: 5px solid #1c1e2e;
+}
+.quet{
+    border: 4px solid #2a275f;
+    outline: 5px solid white;
+}
+.quet:hover{
+    border: 4px solid #2a275f;
+    outline: 5px solid #2a275f;
+}
+
+
+
+/* ?   footer  */
+footer{
+    width: 100%;
+    height: 60px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-top: 2px solid white;
+}
+footer p{
+
+}
+footer img{
+    width: 40px;
 }
